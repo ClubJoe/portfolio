@@ -1,0 +1,21 @@
+li {background: $red;}
+
+.container {
+	@include outer-container;
+	outline: 1px solid red;
+}
+
+.left {
+	@include span-columns(6);
+	background: red;
+}
+
+.right {
+	@include span-columns(6);
+	// @include omega();
+	background: green;
+}
+
+.footer {
+	clear: both;
+}
